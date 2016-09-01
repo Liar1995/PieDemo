@@ -17,7 +17,6 @@ import java.util.ArrayList;
  */
 public class PieView extends View {
     private final static String DEFAULT_DBNAME = "PieView";
-
     // 颜色表 (注意: 此处定义颜色使用的是ARGB，带Alpha通道的)
     private int[] mColors = {0xFFCCFF00, 0xFF6495ED, 0xFFE32636, 0xFF800000, 0xFF808000, 0xFFFF8C69, 0xFF808080,
             0xFFE6B800, 0xFF7CFC00};
@@ -56,8 +55,6 @@ public class PieView extends View {
         for (int i = 0; i < mData.size(); i++) {
             PieData pie = mData.get(i);
             mPaint.setColor(pie.getColor());
-            if(i==2)
-                continue;
             canvas.drawArc(rect, currentStartAngle, pie.getAngle(), true, mPaint);
             currentStartAngle += pie.getAngle();
         }

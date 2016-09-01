@@ -18,15 +18,27 @@ public class MainActivity extends AppCompatActivity {
         PieData pieData;
         ArrayList<PieData> mData=new ArrayList<>();
         pieData=new PieData();
-        pieData.setValue(300);
+        pieData.setValue(30);
         mData.add(pieData);
 
         pieData=new PieData();
-        pieData.setValue(200);
+        pieData.setValue(60);
         mData.add(pieData);
 
         pieData=new PieData();
-        pieData.setValue(700);
+        pieData.setValue(90);
+        mData.add(pieData);
+
+        pieData=new PieData();
+        pieData.setValue(120);
+        mData.add(pieData);
+
+        pieData=new PieData();
+        pieData.setValue(150);
+        mData.add(pieData);
+
+        pieData=new PieData();
+        pieData.setValue(180);
         mData.add(pieData);
 
         pieView.setData(mData);
